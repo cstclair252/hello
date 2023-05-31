@@ -55,6 +55,7 @@ jobs:
           name: Run lint
           # This assumes pytest is installed via the install-package step above
           command: |
+            pip install pylint
             . venv/bin/activate
             make lint
 
